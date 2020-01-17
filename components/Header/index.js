@@ -27,6 +27,7 @@ function Header() {
   header.appendChild(h1Ele);
   header.appendChild(temperatureSpan);
 
+  //ADD THE TEXT CONTENT TO ELEMENTS
   dateSpan.textContent = "SMARCH 28, 2019";
   h1Ele.textContent = "Lambda Times";
   temperatureSpan.textContent = "98 degrees";
