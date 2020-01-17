@@ -24,9 +24,7 @@ axios
   .get("https://lambda-times-backend.herokuapp.com/topics")
   .then(response => {
     const arr = response.data.topics;
-    // console.log("sprint data", arr);
     arr.forEach(topic => {
-    //   console.log("topic", topic);
       tabTopic.appendChild(tabs(topic));
     });
   })

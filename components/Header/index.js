@@ -15,17 +15,21 @@ function Header() {
   const header = document.createElement("div");
   const dateSpan = document.createElement("span");
   const h1Ele = document.createElement("h1");
-  const tempSpan = document.createElement("span");
+  const temperatureSpan = document.createElement("span");
 
   //CREATE CLASSNAMES
   header.classList.add("header");
   dateSpan.classList.add("date");
-  tempSpan.classList.add("temp");
+  temperatureSpan.classList.add("temp");
 
   //APPEND CHILDREN
   header.appendChild(dateSpan);
   header.appendChild(h1Ele);
-  header.appendChild(tempSpan);
+  header.appendChild(temperatureSpan);
+
+  dateSpan.textContent = "SMARCH 28, 2019";
+  h1Ele.textContent = "Lambda Times";
+  temperatureSpan.textContent = "98 degrees";
 
   return header;
 }

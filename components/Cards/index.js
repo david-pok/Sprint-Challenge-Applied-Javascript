@@ -47,14 +47,10 @@ const cardCreator = data => {
 axios
   .get(`https://lambda-times-backend.herokuapp.com/articles`)
   .then(res => {
-    // console.log("article response", res);
     const allKeys = Object.keys(res.data.articles);
-    // console.log("keys arr", allKeys);
     for (let i = 0; i < allKeys.length; i++) {
       const key = allKeys[i];
-    //   console.log("key", key);
       res.data.articles[`${key}`].forEach(content => {
-        // console.log("forEach ele", content);
         cardCreator(content);
       });
     }
